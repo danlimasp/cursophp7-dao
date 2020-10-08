@@ -42,7 +42,8 @@ $aluno->insert();
 echo $aluno;
 */
 
-
+//Alterar um usuário
+/*
 $usuario = new Usuario();
 
 $usuario->loadById(8);
@@ -50,4 +51,14 @@ $usuario->loadById(8);
 $usuario->update("desenvolvedor", "testesenha");
 
 echo $usuario;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(9);
+
+$usuario->delete();
+
+echo $usuario;
+
 ?>
