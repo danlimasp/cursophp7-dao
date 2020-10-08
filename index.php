@@ -26,12 +26,28 @@ echo $searchJSON;
 */
 
 //Carrega um usuário usando o login e a senha
-
+/*
 $usuario = new Usuario();
 $usuario->login("root", "987654321");
 
 echo $usuario;
+*/
+
+//Criando um novo usuário
+/*
+$aluno = new Usuario("aluno", "@lun0" );
+
+$aluno->insert();
+
+echo $aluno;
+*/
 
 
+$usuario = new Usuario();
 
+$usuario->loadById(8);
+
+$usuario->update("desenvolvedor", "testesenha");
+
+echo $usuario;
 ?>
